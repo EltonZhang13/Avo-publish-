@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <title>Avo</title>
+
+    <link rel="shortcut icon" href="favicon.png"/>
+
+    <link rel="stylesheet" href="lib/css/base.css">
+    <link rel="stylesheet" href="lib/css/action-bars.css">
+    <link rel="stylesheet" href="lib/css/chevrons.css">
+    <link rel="stylesheet" href="lib/css/tabs.css">
+    <link rel="stylesheet" href="lib/css/content.css">
+    <link rel="stylesheet" href="lib/css/buttons.css">
+    <link rel="stylesheet" href="lib/css/forms.css">
+    <link rel="stylesheet" href="lib/css/lists.css">
+    <link rel="stylesheet" href="lib/css/spinners.css">
+    <link rel="stylesheet" href="lib/css/icomoon.css">
+    <link rel="stylesheet" href="lib/css/stack.css">
+    <link rel="stylesheet" href="lib/css/sliders.css">
+    <script type="text/javascript" src="js/TypingText.js"></script>
+    <style type="text/css">
+
+    .choices {
+        list-style: none;
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+
+    .lii {
+        width: 100%;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 5em;
+        -webkit-column-rule-width: 2px;
+        -webkit-column-rule-color: #070641;
+    }
+
+    #avo {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    meter {
+        width: 50%;
+        margin: 0 25% 1em;
+        display: inline;
+    }
+
+    .meters {
+        text-align: center;
+        margin: 0px 0 1em;
+        font-weight: bold;
+        color: #050027;
+    }
+
+    .triangle-obtuse:before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 60px;
+        border: 0;
+        border-right-width: 30px;
+        border-bottom-width: 20px;
+        border-style: solid;
+        border-color: transparent #c81e2b;
+        display: block;
+        width: 0;
+    }
+
+    .triangle-obtuse {
+        position: relative;
+        padding: 13px;
+        width: 80%;
+        margin: 60px auto 30px;
+        font-family: Cambria;
+        font-size: 1.25em;
+        color: #fff;
+        background: #c81e2b;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
+        background: -moz-linear-gradient(#f04349, #c81e2b);
+        background: -o-linear-gradient(#f04349, #c81e2b);
+        background: linear-gradient(#f04349, #c81e2b);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    .triangle-obtuse:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 80px;
+        border: 0;
+        border-right-width: 10px;
+        border-bottom-width: 20px;
+        border-style: solid;
+        border-color: transparent #c7c7c7;
+        display: block;
+        width: 0;
+    }
+
+    span { 
+        margin: 0 12%;
+        text-shadow: 1px 1px 2px #666;
+        color: #222; 
+    }
+
+    </style>
+</head>
+<body ontouchstart="">
+
+  <div class="page">
+    <header class="action-bar fixed-top">
+      <a href="#" class="app-icon action">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+      <ul class="actions pull-right">
+        <li><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="compose.html" class="action" title="Compose" data-transition="push"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="contacts.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="#" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="content inset">
+    
+    <div class="choices">
+        <ul class="lii">
+            <li><a href="choice-oatmeal.html"><img src="foods/oats.png" alt="oatmeal" class="food"></img></a></li>
+            <span for="oatmeal">Oatmeal</span>
+            
+            <li><a href="choose_brand.html"><img src="foods/cereal.png" alt="cereal" class="food"></img></a></li>
+            <span for="cereal">Cereal</span>            
+
+            <li><img src="foods/yogurt.png" alt="yogurt" class="food"></img></li>
+            <span for="yogurt">Yogurt</span>
+        </ul>
+            
+    </div> 
+
+    <div class="avo-parts">
+        <p class="triangle-obtuse" id="first_text">Wow I'm hungry. What should I have for breakfast today?</p>
+        <img src="avos/Avo(m).png" id="avo"></img>
+    </div>
+
+    <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
+    <p class="meters">Hunger</p><meter value="0"></meter>
+
+    <script type="text/javascript">
+        new TypingText (document.getElementById("first_text"), 35)
+        TypingText.runAll();
+    </script>
+</body>
+</html>

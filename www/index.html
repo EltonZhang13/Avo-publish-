@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <title>Avo</title>
+
+    <link rel="shortcut icon" href="favicon.png"/>
+
+    <link rel="stylesheet" href="lib/css/base.css">
+    <link rel="stylesheet" href="lib/css/action-bars.css">
+    <link rel="stylesheet" href="lib/css/chevrons.css">
+    <link rel="stylesheet" href="lib/css/tabs.css">
+    <link rel="stylesheet" href="lib/css/content.css">
+    <link rel="stylesheet" href="lib/css/buttons.css">
+    <link rel="stylesheet" href="lib/css/forms.css">
+    <link rel="stylesheet" href="lib/css/lists.css">
+    <link rel="stylesheet" href="lib/css/spinners.css">
+    <link rel="stylesheet" href="lib/css/icomoon.css">
+    <link rel="stylesheet" href="lib/css/stack.css">
+    <link rel="stylesheet" href="lib/css/sliders.css">
+    <script type="text/javascript" src="js/TypingText.js"></script>
+
+    <!-- For demo purposes only -->
+    <style type="text/css">
+
+    h1.intro {
+    font-weight: 200;
+    margin: .5em 0;
+    text-align: center;
+    }
+
+    p {
+    color: #999;
+    margin: 1em auto 0;
+    text-align: center;
+    width: 75%;
+    }
+
+    .triangle-border.top:before {
+    top: -20px;
+    bottom: auto;
+    left: 42%;
+    right: 40px;
+    border-width: 0 20px 20px;
+    }
+
+    .triangle-border:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: #5a8f00 transparent;
+    display: block;
+    width: 0;
+    }
+
+    .triangle-border {
+    position: relative;
+    padding: 15px;
+    margin: 2em auto 3em;
+    border: 5px solid #5a8f00;
+    color: #333;
+    background: #e4e4e4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Cambria, sans-serif;
+    font-size: 20px;
+    }
+
+    .triangle-border.top:after {
+    top: -13px;
+    bottom: auto;
+    left: 44%;
+    right: 47px;
+    border-width: 0 13px 13px;
+    }
+
+    .triangle-border:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 47px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #e4e4e4 transparent;
+    display: block;
+    width: 0;
+    }
+
+    .center-me {
+    text-align: center;
+    }
+
+    img {
+    display: block;
+    margin: 1em 110px 1em;
+    }
+    </style>
+</head>
+<body ontouchstart="">
+
+  <div class="page">
+    <header class="action-bar fixed-top">
+      <a href="#" class="app-icon action">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+      <ul class="actions pull-right">
+        <li><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="compose.html" class="action" title="Compose" data-transition="push"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="contacts.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="#" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="content inset">
+      
+      <h1 class="intro">Avo</h1>
+      <a href="main.html"><img src="avos/Avo(s).png"></a>
+      <p class="triangle-border top" id="step1">Thank you for downloading this app&period; We are very excited that you have decided to take the first step towards becoming healthy&period; In case you&rsquo;re wondering the first step is knowing what to eat&comma; and what not to eat&period; This app is going to help you gain that knowledge&period; So start by pressing on me&period; </p>
+      
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  new TypingText (document.getElementById("step1"), 50);
+        TypingText.runAll();
+  </script>
+  <script src="lib/js/stack.js"></script>
+  <script src="lib/js/action-bars.js"></script>
+  <script src="lib/js/spinners.js"></script>
+  <script src="lib/js/tabs.js"></script>
+  <script type="text/javascript" src="phonegap.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+ 
+    
+  <script type="text/javascript">
+      app.initialize();
+  </script>
+</body>
+</html>
