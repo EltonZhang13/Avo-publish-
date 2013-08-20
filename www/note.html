@@ -1,34 +1,61 @@
-<!DOCTYPE html> 
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
-	<title>Home Page</title>
-	<script type="text/javascript" src="js/TypingText.js"></script>
+
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/stylesheet.css">
+
 </head>
 
-<body>
-	
-	<div class="nav">
-		<ul>
-			<li class="Avo_Status"><a href="home.html">Home</a></li>
-			<li class="Food_History"><a href="food_history.html">Food History</a></li>
-			<li class="Bonus"><a href="quiz.html">Bonus Points</a></li>
-		</ul>
-	</div>
+<body ontouchstart"">
 
-	<img src="avos/Avo(m).png" class="avo">
-	<p class="triangle-border top" id="thanks">I am ready for the day now. Please come back to help me choose what to eat during lunchtime.</p>
-	<h1>Thanks for feeding me</h1>
+<div class="page">
+    <header class="action-bar fixed-top">
+      <a href="home.html" class="app-icon action">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+      <ul class="actions pull-right">
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
+    </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-share-2"></i></a></li>
+      </ul>
+    </nav>
+
+	<div class="content inset">
+		
+		<h1 class="header note">Thanks for feeding me</h1>
+		<img src="avos/Avo(m).png" class="avo-home">
+		<p class="triangle-border special top">I am ready for the day now&period; Please come back to help me choose what to eat during lunchtime&period; Better yet come take a quiz so you can test your knowledge on health&period; Don&rsquo;t worry it doesn&rsquo;t count towards your grade&period; But&comma; it will let you fill up one of the meters&period;</p>
+    <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
+    <p class="meters">Hunger</p><meter value="4" min="0" max="10"></meter>
 	
-	<script type="text/javascript">
-		new TypingText (document.getElementById("thanks"), 35);
-		TypingText.runAll();
-	</script>
+  </div>
+</div>
+
+<script src="js/stack.js"></script>
+<script src="js/action-bars.js"></script>
+<script src="js/spinners.js"></script>
+<script src="js/tabs.js"></script>
+	
 </body>
 </html>

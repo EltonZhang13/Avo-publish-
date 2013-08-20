@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-	<meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	<link rel="stylesheet" type="text/css" href="css/quiz.css">
-	<title>Health Quiz</title>
-
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/stylesheet.css">
+   
 </head>
 
-<body>
+<body ontouchstart"">
 
-	<img src="avos/Avo(xs).png" class="proctor">
-	<p class="triangle-border top">What will help make your brain function better?</p>
-	<div id="buttonGroup">
-		<input type="radio" name="answer" value="Omega 3 Fatty-Acids" class="answer"> A &ndash; Omega 3 Fatty&ndash;Acids<br>
-		<input type="radio" name="answer" value="Using the Avo app" class="answer"> B &ndash; Using the Avo app <br>
-		<input type="radio" name="answer" value="Phosphate" class="answer"> C &ndash; Phosphate <br>
-		<input type="radio" name="answer" value="Guanine" class="answer"> D &ndash; Guanine <br>  
-	</div>
-	<button type="button"><a href="results2.html">Finish</button></a>
-	<script type="text/javascript">
-		$(document).on('pagebeforeshow', '#ID', function() {        
-            setTimeout(function() {
-            $('head').append( '<meta name="viewport" content="width=device-height, height=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;">' );
-            }, 200);
-        });
-	</script>
+<div class="page">
+    <header class="action-bar fixed-top">
+      <a href="home.html" class="app-icon action" data-transition="pop">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+    <ul class="actions pull-right">
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
+    </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+      </ul>
+    </nav>
+
+	<div class="content inset">	
+
+		<img src="avos/Avo(m).png" class="avo">
+
+		<p class="triangle-border top">What will help make your brain function better&quest;</p>
+
+    <div>
+
+      <div class="space1">
+      <input type="radio" id="r17" name="rr" />
+      <label for="r17"><span></span> Omega 3 Fatty Acids <br></label>
+      </div>
+
+      <div class="space2">
+      <input type="radio" id="r18" name="rr" />
+      <label for="r18"><span></span> Using the Avo app <br></label>
+      </div>
+
+      <div class="space3">
+      <input type="radio" id="r19" name="rr" />
+      <label for="r19"><span></span> Phosphate <br></label>
+      </div>
+
+      <div class="space4">
+      <input type="radio" id="r20" name="rr" />
+      <label for="r20"><span></span> Guanine </label>
+      </div>
+
+    </div>
+
+		<button type="button" class="btn-small special"><a href="results.html" data-transition="push">Finish</button></a>
+	
+  </div>
+
+</div>
+
 </body>
 </html>
+
+
+	

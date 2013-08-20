@@ -48,10 +48,6 @@
   bottom: 48px;
 }
 
-.inset {
-  padding: 10px;
-}
-
 .flex {
   width: 100%;
   display: -webkit-box;
@@ -64,10 +60,4 @@
 .flex > * {
   -webkit-box-flex: 1;
           box-flex: 1;
-}
-
-.Avo {
-  width: 50%;
-  display: block;
-  margin: 1em auto;
 }

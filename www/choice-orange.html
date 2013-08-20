@@ -1,137 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-    <title>Avo</title>
+  <title>Avo</title>
 
-    <link rel="shortcut icon" href="favicon.png"/>
+  <link rel="shortcut icon" href="favicon.png"/>
 
-    <link rel="stylesheet" href="lib/css/base.css">
-    <link rel="stylesheet" href="lib/css/action-bars.css">
-    <link rel="stylesheet" href="lib/css/chevrons.css">
-    <link rel="stylesheet" href="lib/css/tabs.css">
-    <link rel="stylesheet" href="lib/css/content.css">
-    <link rel="stylesheet" href="lib/css/buttons.css">
-    <link rel="stylesheet" href="lib/css/forms.css">
-    <link rel="stylesheet" href="lib/css/lists.css">
-    <link rel="stylesheet" href="lib/css/spinners.css">
-    <link rel="stylesheet" href="lib/css/icomoon.css">
-    <link rel="stylesheet" href="lib/css/stack.css">
-    <link rel="stylesheet" href="lib/css/sliders.css">
-    <link rel="stylesheet" href="lib/css/stylesheet.css">
-    <script type="text/javascript" src="js/TypingText.js"></script>
-
-    <style type="text/css">
-
-    img {
-    	width: 70%;
-    	display: block;
-    	margin: 1em auto;
-    }
-
-	h1 {
-		text-align: center;
-		text-shadow: 0 2px 2px #000;
-		color: #222;
-		font-family: "Leauge Gothic";
-		font-size: 3em;
-	}
-
-	p {
-		text-align: center;
-		width: 75%;
-		margin: 1em auto;
-		color: #222;
-		font-family: "Leauge Gothic", Cambria, sans-serif;
-		font-size: 1.25em;
-		text-shadow: 0 1px 1px #c7c7c7;
-	}
-
-	.oval-thought-border:before {
-		content: "";
-		position: absolute;
-		z-index: 10;
-		bottom: -40px;
-		right: 130px;
-		width: 50px;
-		height: 50px;
-		border: 10px solid #c81e2b;
-		background: #fff;
-		-webkit-border-radius: 50px;
-		-moz-border-radius: 50px;
-		border-radius: 50px;
-		display: block;
-	}
-
-	.oval-thought-border {
-		position: relative;
-		padding: 70px 30px;
-		margin: 1em auto 80px;
-		border: 10px solid #c81e2b;
-		text-align: center;
-		color: #333;
-		background: #fff;
-		-webkit-border-top-left-radius: 240px 140px;
-		-webkit-border-top-right-radius: 240px 140px;
-		-webkit-border-bottom-right-radius: 240px 140px;
-		-webkit-border-bottom-left-radius: 240px 140px;
-		-moz-border-radius: 240px / 140px;
-		border-radius: 240px / 140px;
-	}
-	
-	.oval-thought-border:after {
-		content: "";
-		position: absolute;
-		z-index: 10;
-		bottom: -100px;
-		right: 100px;
-		width: 25px;
-		height: 25px;
-		border: 10px solid #c81e2b;
-		background: #fff;
-		-webkit-border-radius: 25px;
-		-moz-border-radius: 25px;
-		border-radius: 25px;
-		display: block;
-	}
-    </style>
-
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/stylesheet.css">
+   
 </head>
 
-<body ontouchstart"">
+<body ontouchstart="">
 
 <div class="page">
-    <header class="action-bar fixed-top">
-      <a href="#" class="app-icon action">
-        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
-      </a>
-      <h1 class="title">Avo</h1>
-      <ul class="actions pull-right">
-        <li><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
-      </ul>
-    </header>
 
-    <nav class="action-bar fixed-bottom">
-      <ul class="actions flex" data-overflow="false">
-        <li><a href="compose.html" class="action" title="Compose" data-transition="push"><i class="icon-home"></i></a></li>
-        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
-        <li><a href="contacts.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
-        <li><a href="#" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
-      </ul>
-    </nav>
+  <header class="action-bar fixed-top">
+    <a href="home.html" class="app-icon action" data-transition="pop">
+      <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+    </a>
+    <h1 class="title">Avo</h1>
+    <ul class="actions pull-right">
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
+    </ul>
+  </header>
 
-<div class="content inset">
+  <nav class="action-bar fixed-bottom">
+    <ul class="actions flex" data-overflow="false">
+      <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+      <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+      <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+      <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+    </ul>
+  </nav>
 
-	<h1>Juice...</h1>
-	<p id="leadin">When you hear juice, you think of a fruit being squeezed, and the liquid that oozes out is what we drink. But that is not the case&hellip;</p>
-	<blockquote class="oval-thought-border"><a href="leadin.html"><button type="button" class="btn-small">Why?!</button></a></blockquote>
-	<div>
-		<img src="avos/Avo(p).png">
+	<div class="content inset">
+
+		<h1 class="header">Juice...</h1>
+		<p class="why">When you hear juice, you think of a fruit being squeezed, and the liquid that oozes out is what we drink. But that is not the case&hellip;</p>
+		<blockquote class="oval-thought-border"><button type="button" class="btn-small"id="btn-skeptical"><a href="leadin.html" data-transition="push">Why?!</button></a></blockquote>
+		<div>
+			<img src="avos/Avo(p).png" id="Avo_p">
+		</div>
 	</div>
+</div>
 
+<script src="js/stack.js"></script>
+<script src="js/action-bars.js"></script>
+<script src="js/spinners.js"></script>
+<script src="js/tabs.js"></script>
 
 </body>
 </html>

@@ -1,34 +1,59 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-	<meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	<link rel="stylesheet" type="text/css" href="css/quiz.css">
-	<title>Health Quiz</title>
-
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/stylesheet.css">
+     
 </head>
 
-<body>
-	<div class="nav">
-		<ul>
-			<li class="Avo_Status"><a href="home.html">Home</a></li>
-			<li class="Food_History"><a href="food_history.html">Food History</a></li>
-			<li class="Bonus"><a href="quiz.html">Bonus Points</a></li>
-		</ul>
+<body ontouchstart"">
+
+<div class="page">
+    <header class="action-bar fixed-top">
+      <a href="home.html" class="app-icon action" data-transition="pop">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+    <ul class="actions pull-right">
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
+    </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+      </ul>
+    </nav>
+
+	<div class="content inset">	
+		<h1 class="header quiz">Health Quiz</h1>
+		<img src="avos/Avo(m).png" class="avo">
+		<p class="why">It&rsquo;s time to take a quiz&period; Avo needs to take an assessment everyday so he doesn&rsquo;t lose too much health&comma; or get too hungry&period;</p>
+		<h2 class="header leadin">Don&rsquo;t worry it&rsquo;ll be easy&period;</h2>
+		<button type="button" class="btn-small"><a href="Q1.html" data-transition="push">Start</button></a>           
 	</div>
-	<div>
-		<h1 id="quiz_title">Health Quiz</h1>
-		<img src="avos/Avo(s).png">
-		<p id="intro">It's time to take a quiz. Avo needs to take an assessment everyday so he doesn't lose too much health, or get too hungry.</p>
-		<h2>Don't worry it'll be easy.</h2>
-	</div>
-	<div>
-		<button type="button"><a href="Q1.html">Start</a></button>
-	</div>
+	
+</div>
+
+<script src="js/stack.js"></script>
+<script src="js/action-bars.js"></script>
+<script src="js/spinners.js"></script>
+<script src="js/tabs.js"></script>
 	
 </body>
 </html>

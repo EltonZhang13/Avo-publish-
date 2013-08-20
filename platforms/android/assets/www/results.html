@@ -1,40 +1,97 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-	<link rel="stylesheet" type="text/css" href="css/quiz.css">
-	<title>Quiz Results</title>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Correct',     9.6],
-          ['Incorrect',  14.4]
-        ]);
 
-        var options = {
-          title: ''
-        };
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
+  <title>Avo</title>
+
+  <link rel="shortcut icon" href="favicon.png"/>
+
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/chevrons.css">
+  <link rel="stylesheet" href="lib/css/tabs.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/forms.css">
+  <link rel="stylesheet" href="lib/css/lists.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/sliders.css">
+  <link rel="stylesheet" href="lib/css/stylesheet.css">
+  <script src="js/Chart.js"></script>
+  
 </head>
 
-<body>
-	<h1 class="results">Results</h1>
-	<div id="chart_div" style="width: 400px; height: 400px"></div>
-	<div>
-		<h2 class="prize">You won 4 points!</h2>
-		<p class="amount">Where would you like to add it to?</p>
+<body ontouchstart"">
+
+<div>
+    <header class="action-bar fixed-top">
+      <a href="home.html" class="app-icon action" data-transition="pop">
+        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+      </a>
+      <h1 class="title">Avo</h1>
+    <ul class="actions pull-right">
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
+      <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
+      <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
+    </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+        <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+      </ul>
+    </nav>
+
+	<div class="content inset">	
+ 
+  <h1 class="header">Quiz Results</h1>
+
+	<canvas id="myChart" data-Type="Pie" width="300" height="300" style="width: 300px; height: 300px;"></canvas>
+
+		<div id="percentage_wrapper">
+			<div id="percentage">
+				<ul>
+					<li><p>60.00%</p><p>40.00%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
+				</ul>
+			</div>
+		</div>
+
+	<div id="labels">
+		<ul>
+			<li><span></span>Correct </li>
+			<li><span></span>Incorrect </li>
+		</ul>
 	</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	var ctx = document.getElementById("myChart").getContext("2d");
+	
+	var data = [
+		{
+			value							:40,
+			color							:"F38630"
+		},
+		{
+			value							:60,
+			color							:"69D2E7"
+		}
+	]
+	new Chart(ctx).Pie(data);
+
+</script>
+
 </body>
 </html>
