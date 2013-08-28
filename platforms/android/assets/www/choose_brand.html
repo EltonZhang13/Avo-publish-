@@ -9,19 +9,19 @@
 
   <link rel="shortcut icon" href="favicon.png"/>
 
-  <link rel="stylesheet" href="lib/css/base.css">
-  <link rel="stylesheet" href="lib/css/action-bars.css">
-  <link rel="stylesheet" href="lib/css/chevrons.css">
-  <link rel="stylesheet" href="lib/css/tabs.css">
-  <link rel="stylesheet" href="lib/css/content.css">
-  <link rel="stylesheet" href="lib/css/buttons.css">
   <link rel="stylesheet" href="lib/css/forms.css">
   <link rel="stylesheet" href="lib/css/lists.css">
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
   <link rel="stylesheet" href="lib/css/spinners.css">
   <link rel="stylesheet" href="lib/css/icomoon.css">
   <link rel="stylesheet" href="lib/css/stack.css">
-  <link rel="stylesheet" href="lib/css/sliders.css">
   <link rel="stylesheet" href="lib/css/stylesheet.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/tabs.css">
+  <link rel="stylesheet" href="lib/css/sliders.css">
   
 </head>
 
@@ -57,12 +57,30 @@
   		<p class="why">Choose The Brand &excl;</p>
   	</div>
 
-  	<div id="buttonGroup">
-  		<input type="radio" name="Brand" value="Kellogs Frosted Flakes" class="choice"> A &ndash; Kellogs Frosted Flakes <br>
-  		<input type="radio" name="Brand" value="Post Shredded Wheat" class="choice"> B &ndash; Post Shredded Wheat <br>
-  		<input type="radio" name="Brand" value="Kellogs Mini-Wheats" class="choice"> C &ndash; Kellogs Mini&dash;Wheats <br>
-  		<input type="radio" name="Brand" value="CAP'N Crunch" class="choice"> D &ndash; CAP&rsquo;N Crunch  
-  	</div>
+    <div>
+
+      <div class="space_1">
+      <input type="radio" id="B1" name="rr" />
+      <label for="B1"><span></span> Kellogs Frosted Flakes <br></label>
+      </div>
+
+      <div class="space_2">
+      <input type="radio" id="B2" name="rr" />
+      <label for="B2"><span></span> Post Cereal <br></label>
+      </div>
+
+      <div class="space_3">
+      <input type="radio" id="B3" name="rr" />
+      <label for="B3"><span></span> Kellogs Frosted Mini Wheats <br></label>
+      </div>
+
+      <div class="space_4">
+      <input type="radio" id="B4" name="rr" />
+      <label for="B4"><span></span> CAP'N Crunch </label>
+      </div>
+
+    </div>
+
     <div class="flexbox"> 
       <img src="img/frosted_flakes.png"> <br>
       <img src="img/post_logo.png"> <br>
@@ -72,7 +90,8 @@
 
   	<button type="button" class="btn-small" id="btn-special"><a href="choice-cereal.html" data-transition="push">Next</button></a>
 
-  </div>
+      </div>
+
 </div>
 
 <script src="js/stack.js"></script>

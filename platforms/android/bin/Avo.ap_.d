@@ -24,9 +24,11 @@ C:\dev\www\avo1\avo\platforms\android\assets\www \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos \
 C:\dev\www\avo1\avo\platforms\android\assets\www\beware.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\choice-cereal.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\choice-milk.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\choice-oatmeal.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\choice-orange.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\choose_brand.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\code.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\config.xml \
 C:\dev\www\avo1\avo\platforms\android\assets\www\cordova.js \
 C:\dev\www\avo1\avo\platforms\android\assets\www\cordova_plugins.js \
@@ -39,8 +41,10 @@ C:\dev\www\avo1\avo\platforms\android\assets\www\help \
 C:\dev\www\avo1\avo\platforms\android\assets\www\home.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\img \
 C:\dev\www\avo1\avo\platforms\android\assets\www\index.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\jQuery PageSlide Demo by Scott Robbin.htm \
 C:\dev\www\avo1\avo\platforms\android\assets\www\js \
 C:\dev\www\avo1\avo\platforms\android\assets\www\leadin.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\leadin2.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib \
 C:\dev\www\avo1\avo\platforms\android\assets\www\main.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\note.html \

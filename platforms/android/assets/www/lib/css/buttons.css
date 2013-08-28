@@ -50,7 +50,7 @@
 }
 
 .btn-small {
-  width: 20%;
+  width: 22%;
   font-size:20px;
   border-radius: 1em;
   display: block;
@@ -114,12 +114,21 @@ input[type="radio"]:checked + label span {
   padding: 2em 4em;
 }
 
+.space_1 {
+  padding: 1em 2em 2em;
+}
+
+.space_2 {
+  padding: 2em 2em;
+}
+
+.space_3 {
+  padding: 2em 2em;
+}
 
 
-
-
-
-
-
+.space_4 {
+  padding: 2em 2em;
+}
 
 

@@ -16,96 +16,26 @@
   <link rel="stylesheet" href="lib/css/content.css">
   <link rel="stylesheet" href="lib/css/buttons.css">
   <link rel="stylesheet" href="lib/css/forms.css">
+  <link rel="stylesheet" href="lib/css/lists.css">
   <link rel="stylesheet" href="lib/css/spinners.css">
   <link rel="stylesheet" href="lib/css/icomoon.css">
   <link rel="stylesheet" href="lib/css/stack.css">
   <link rel="stylesheet" href="lib/css/sliders.css">
   <link rel="stylesheet" href="lib/css/stylesheet.css">
 
-  <style>
-  	
-   body { 
-  	background: #f4f4f4;
-  	font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #666; 
-  	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-  	-webkit-text-size-adjust: none;
+<style>
+
+  @media only screen and (max-width: 767px) {
+      #content ul#nav { display: none; }
+      
+      .open { display: block; }
+      #pageslide { width: 400px; }
+          #pageslide #nav li { padding: 10px 0; border-bottom: 1px solid #666; }
+          #pageslide #nav li a { color: #FFF; border: none; }
+          #pageslide #nav li a:hover { text-decoration: underline; }
   }
 
-      p { margin-bottom: 20px; }
-
-      #content {
-          width: 940px;
-          padding: 10px;
-          margin: 0 auto;
-      }
-          #content h1 { color: #333; line-height: 1em; }
-          
-          ul#nav { padding-left: 0; list-style: none; width: 100%; margin-bottom: 40px; }
-          ul#nav:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-          
-              #content ul#nav li { float: left; width: 20%; text-align: center; }
-              #content ul#nav a { 
-                      display: block; 
-                      background: #000;
-                      color: #FFF; 
-                      font-weight: bold; 
-                      padding: 10px; 
-                      border-right: 1px solid #FFF;
-              }
-              #content ul#nav a:hover { background: #333; }
-      
-      #pageslide {
-          /* These styles MUST be included. Do not change. */
-          display: none;
-          position: absolute;
-          position: fixed;
-          top: 0;
-          height: 100%;
-          z-index: 999999;
-
-          /* Specify the width of your pageslide here */
-          width: 95%;
-
-          /* These styles are optional, and describe how the pageslide will look */
-          background-color: #c7c7c7;
-          color: #FFF;
-          -webkit-box-shadow: inset 0 0 5px 5px #222;
-          -moz-shadow: inset 0 0 5px 5px #222;
-          box-shadow: inset 0 0 5px 5px #222;
-      }
-      
-      #secondary { display: none; color: #EFEFEF; }
-          #secondary h2 { color: #FFF; }
-          
-      
-      /* Media Queries
-      * 
-      * Note: Please don't base your responsive design off of this code. It is just here for demo purposes.
-      * Rather, grab yourself a copy of Ethan's book: http://www.abookapart.com/products/responsive-web-design
-      ================================================== */
-      
-      /* Mobile and iPad Portrait */
-  	@media only screen and (max-width: 959px) {
-  	    #content { width: 748px; }
-  	}
-  	
-  	/* Mobile Landscape and Portrait */
-  	@media only screen and (max-width: 767px) {
-  	    #content { width: 400px; }
-  	    #content h1 { font-size: 22px; line-height: 30px; background-color: #000; color: #FFF; padding: 10px; }
-  	    #content ul#nav { display: none; }
-  	    
-  	    .open { display: block; }
-  	}
-  	
-  	/* Mobile Portrait */
-      @media only screen and (max-width: 479px) {
-          #content { width: 280px; }
-          #content h1 { font-size: 14px; }
-      }
-      
-  </style>
+</style>
 
 </head>
 
@@ -113,100 +43,70 @@
 
 <div>
 
-    <header class="action-bar fixed-top">
-      <a href="#pageslide" class="app-icon action open" data-transition="pop">
-        <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
-      </a>
-      <h1 class="title">Avo</h1>
+  <header class="action-bar fixed-top">
+
+    <a href="#ex" class="app-icon action open" data-transition="pop">
+      <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
+    </a>
+    <h1 class="title">Avo</h1>
     <ul class="actions pull-right">
       <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
       <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
       <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
     </ul>
-    </header>
 
-    <nav class="action-bar fixed-bottom">
-      <ul class="actions flex" data-overflow="false">
-        <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
-        <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
-        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
-        <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+  </header>
+
+  <nav class="action-bar fixed-bottom">
+    <ul class="actions flex" data-overflow="false">
+      <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
+      <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
+      <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
+      <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
+    </ul>
+  </nav>
+
+  <div class="content inset">
+    
+  <div id="content">
+    <h1 class="header">Quiz Results</h1>
+    <ul id="nav">
+        <li><a href="">Menu Item 1</a></li>
+        <li><a href="">Menu Item 2</a></li>
+        <li><a href="">Menu Item 3</a></li>
+        <li><a href="">Menu Item 4</a></li>
+        <li><a href="">Menu Item 5</a></li>
+    </ul>
+    
+  </div>  
+
+  <canvas id="myChart" data-Type="Pie" width="300" height="300" style="width: 300px; height: 300px;"></canvas>
+
+  <div id="percentage_wrapper">
+    <div id="percentage">
+      <ul>
+        <li><p>40.00%</p><p>60.00%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
       </ul>
-    </nav>
-
-  <div class="content"> 
-
-    <div>
-
-      <h1 class="header special"><a class="open" href="#nav"></a>PageSlide Responsive Demo</h1>
-
-      <div class="copy">
-          <p>If you've ever used the <a href="http://m.facebook.com">mobile version of Facebook</a>, or <a href="http://www.path.com">Path</a>, then you've probably seen something akin to PageSlide in action.</p>
-          <p>In this example, resizing the browser to a smaller window (less than or equal to an iPhone's landscape view) will collapse and hide the faux menu nav above. Clicking on the menu icon will then trigger PageSlide to open.</a>
-          <p>Don't really care about this demo, and just want to see PageSlide in action? <a class="impatient" href="#secondary">Click away, my friend.</a></a>
-          <h3>Interested in learning more about PageSlide?</h3>
-          <p><a href="https://github.com/srobbin/jquery-pageslide">Fork or download this project on GitHub</a><br />
-              <a href="http://srobbin.com/blog/jquery-pageslide/">Visit the original project page on Scott Robbin's website</a></p>
-      </div>
-      
-    <div id="pageslide">
-
-      <header class="action-bar fixed-top">
-        <a href="#pageslide" class="app-icon action open" data-transition="pop">
-          <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
-        </a>
-        <h1 class="title">Avo</h1>
-      <ul class="actions pull-right">
-        <li class="action-overflow-hidden"><a href="#" class="action" title="Statistics" data-transition="push"><i class="icon-person"></i></a></li>
-        <li class="action-overflow-hidden"><a href="#" class="action" title="Settings" data-transition="push"><i class="icon-settings"></i></a></li>
-        <li><a class="action action-overflow-icon toggle-spinner" title="Avo"><i></i></a></li>
-      </ul>
-      </header>
-
-      <nav class="action-bar fixed-bottom">
-        <ul class="actions flex" data-overflow="false">
-          <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
-          <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
-          <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
-          <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
-        </ul>
-      </nav>
-
-      <h1 class="header">Quiz Results</h1>
-
-        <canvas id="myChart" data-Type="Pie" width="300" height="300" style="width: 300px; height: 300px;"></canvas>
-
-        <div id="percentage_wrapper">
-          <div id="percentage">
-            <ul>
-              <li><p>60.00%</p><p>40.00%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="labels">
-          <ul>
-            <li><span></span>Correct </li>
-            <li><span></span>Incorrect </li>
-          </ul>
-        </div>
-
-      </div>
     </div>
+  </div>
 
-        
+  <div id="labels">
+    <ul>
+      <li><span></span>Correct </li>
+      <li><span></span>Incorrect </li>
+    </ul>
+  </div>
+
+</div>
+
+</div>
 
 <script src="js/action-bars.js"></script>
 <script src="js/spinners.js"></script>
-<script src="js/tabs.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/pageslide.min.js"></script>
-<script src="js/Chart.js"></script>
-<script>
-
-  $(document).ready(function() {
-      $(".open, .impatient").pageslide();
-  });
+<script src="js/Chart.js"></script> 
+<script type="text/javascript">
 
   var ctx = document.getElementById("myChart").getContext("2d");
 
@@ -222,7 +122,11 @@
   ]
   new Chart(ctx).Pie(data);
 
-</script>
 
+  $(document).ready(function() {
+      $(".open, .impatient").pageslide();
+  });
+
+</script>
 </body>
 </html>

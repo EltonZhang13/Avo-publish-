@@ -58,14 +58,19 @@
   </div> 
 
   <div>
-    <p class="triangle-obtuse">Wow I'm hungry. What should I have for breakfast today?</p>
+    <p class="triangle-obtuse" id="a">Wow I'm hungry. What should I have for breakfast today?</p>
     <img src="avos/Avo(m).png" class="avo"></img>
   </div>
 
   <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
   <p class="meters">Hunger</p><meter value="0"></meter>
 </div>
-  
+
+<script src="js/TypingText.js"></script>
+<script type="text/javascript">
+  new TypingText (document.getElementById("a"), 40);
+  TypingText.runAll();
+</script>  
 <script src="js/stack.js"></script>
 <script src="js/action-bars.js"></script>
 <script src="js/spinners.js"></script>

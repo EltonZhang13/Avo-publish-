@@ -4,29 +4,79 @@
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <title>Avo</title>
+  
+  <style>
 
-    <script type="text/javascript">
+/*  @-webkit-keyframes flipper {
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-42704201-1']);
-	  _gaq.push(['_trackPageview']);
+  	from { -webkit-transform:rotateY(0deg); }
+  	to { -webkit-transform:rotateY(180deg); }
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+  }
 
-	</script>
+  .flip:active {
+  	-webkit-animation-name flipper;
+  	-webkit-animation-direction: alternate; 
+  }*/
+
+	@-webkit-keyframes flipper {
+		100%  { -webkit-transform: rotateY(180deg); }
+	}
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+</style>	
+
 </head>
+
 <body>
 
-<div id="container"></div>
+<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+    <img src="avos/Avo(m).png"/>
+  </div>
+  <div class="back face center">
+    <p>This is nice for exposing more information about an image.</p>
+    <p>Any content can go here.</p>
+  </div>
+</div>
+</div>
 
-<script src="js/cordova-2.5.0.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/pageslider.js"></script>
-
+</div>
 </body>
 </html>

@@ -31,7 +31,7 @@ h1.intro {
 
 .header.note {
   text-align: center;
-  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 1px 1px #000;
   color: #222;
   font-family: "Leauge Gothic";
   font-size: 2.5em;
@@ -306,7 +306,7 @@ span {
 .beware {
   text-align: center;
   margin: 1em auto 0;
-  color: #FFF;
+  color: #000;
 }
 
 .help {
@@ -409,7 +409,7 @@ img[src="avos/Avo(td).png"] {
 }
 
 .flexbox {
-  margin: -27.5em 5em;
+  margin: -25.5em 5em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: center;
@@ -418,7 +418,8 @@ img[src="avos/Avo(td).png"] {
 .flexbox img {
   display: -webkit-box;
   -webkit-box-flex: 1;
-  margin: 1.5em 19em;
+  margin: 1em 19em;
+  width: 19%;
 } 
 
 #btn-special {
@@ -619,3 +620,33 @@ ul li p {
 
 /*Pie Chart CSS*/
 
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.blink {
+
+  -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: 6;  
+  -webkit-animation-timing-function: cubic-bezier(.53,.09,.5,.92);
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 6s;   
+
+}
+
+@-webkit-keyframes slidein {
+
+  from { margin-left: 100%; width: 300%; }
+  to { margin-left: 0%; width: 100%; }
+
+}
+
+.slide {
+
+  -webkit-animation-name: slidein;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: cubic-bezier(.18,-0.07,.28,1.4);
+  -webkit-animation-duration: 1.5s;
+
+}

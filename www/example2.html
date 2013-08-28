@@ -23,44 +23,25 @@
   <link rel="stylesheet" href="lib/css/sliders.css">
   <link rel="stylesheet" href="lib/css/stylesheet.css">
 
-  <style>
+<style>
+
+  @media only screen and (max-width: 767px) {
+      #content ul#nav { display: none; }
       
-  #pageslide {
-      /* These styles MUST be included. Do not change. */
-      display: none;
-      position: absolute;
-      position: fixed;
-      top: 0;
-      height: 100%;
-      z-index: 999999;
-
-      /* Specify the width of your pageslide here */
-      width: 100%;
-
-      /* These styles are optional, and describe how the pageslide will look */
-      background-color: #c7c7c7;
-      color: #FFF;
+      .open { display: block; }
+      #pageslide { width: 400px; }
+          #pageslide #nav li { padding: 10px 0; border-bottom: 1px solid #666; }
+          #pageslide #nav li a { color: #FFF; border: none; }
+          #pageslide #nav li a:hover { text-decoration: underline; }
   }
 
-  .open {
-    display: none;
-    float: left;
-    border: 0;
-  }
-  
-  /* Media Queries
-  * 
-  * Note: Please don't base your responsive design off of this code. It is just here for demo purposes.
-  * Rather, grab yourself a copy of Ethan's book: http://www.abookapart.com/products/responsive-web-design
-  ================================================== */
-      
-  </style>
+</style>
 
 </head>
 
 <body ontouchstart"">
 
-<div id="init">
+<div>
 
   <header class="action-bar fixed-top">
 
@@ -85,45 +66,39 @@
     </ul>
   </nav>
 
-  <div class="content inset" id="content">
+  <div class="content inset">
     
-  <h1 class="header">Quiz Results</h1>
+  <div id="content">
+    <h1 class="header">Quiz Results</h1>
+    <ul id="nav">
+        <li><a href="">Menu Item 1</a></li>
+        <li><a href="">Menu Item 2</a></li>
+        <li><a href="">Menu Item 3</a></li>
+        <li><a href="">Menu Item 4</a></li>
+        <li><a href="">Menu Item 5</a></li>
+    </ul>
+    
+  </div>  
 
-    <canvas id="myChart" data-Type="Pie" width="300" height="300" style="width: 300px; height: 300px;"></canvas>
+  <canvas id="myChart" data-Type="Pie" width="300" height="300" style="width: 300px; height: 300px;"></canvas>
 
-    <div id="percentage_wrapper">
-      <div id="percentage">
-        <ul>
-          <li><p>40.00%</p><p>60.00%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="labels">
+  <div id="percentage_wrapper">
+    <div id="percentage">
       <ul>
-        <li><span></span>Correct </li>
-        <li><span></span>Incorrect </li>
+        <li><p>40.00%</p><p>60.00%</p><p>63.90%</p><p>67.02%</p><p>68.28%</p><p>89.68%</p></li>
       </ul>
     </div>
+  </div>
 
+  <div id="labels">
+    <ul>
+      <li><span></span>Correct </li>
+      <li><span></span>Incorrect </li>
+    </ul>
   </div>
 
 </div>
 
-<div id="pageslide">
-
-  <div class="content inset">
-
-    <ul class="list inset">
-      <li class="list-divider">Make Avo <i>your</i> Avo</li>
-      <li class="list-item-two-lines">
-        <h3>Different Avatars</h3>
-        <p>Even Avo can become dull (especially if you don't feed him)
-      </li>
-    </ul>
-
-  </div>
-  
 </div>
 
 <script src="js/action-bars.js"></script>

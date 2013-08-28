@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-  <title>Avo</title>
-
-  <link rel="shortcut icon" href="favicon.png"/>
-
   <link rel="stylesheet" href="lib/css/base.css">
   <link rel="stylesheet" href="lib/css/action-bars.css">
-  <link rel="stylesheet" href="lib/css/chevrons.css">
-  <link rel="stylesheet" href="lib/css/tabs.css">
   <link rel="stylesheet" href="lib/css/content.css">
   <link rel="stylesheet" href="lib/css/buttons.css">
-  <link rel="stylesheet" href="lib/css/forms.css">
-  <link rel="stylesheet" href="lib/css/lists.css">
-  <link rel="stylesheet" href="lib/css/spinners.css">
   <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
   <link rel="stylesheet" href="lib/css/stack.css">
-  <link rel="stylesheet" href="lib/css/sliders.css">
   <link rel="stylesheet" href="lib/css/stylesheet.css">
   
 </head>
@@ -66,18 +58,22 @@
   </div> 
 
   <div>
-    <p class="triangle-obtuse">Wow I'm hungry. What should I have for breakfast today?</p>
+    <p class="triangle-obtuse" id="a">Wow I'm hungry. What should I have for breakfast today?</p>
     <img src="avos/Avo(m).png" class="avo"></img>
   </div>
 
   <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
   <p class="meters">Hunger</p><meter value="0"></meter>
 </div>
-  
+
+<script src="js/TypingText.js"></script>
+<script type="text/javascript">
+  new TypingText (document.getElementById("a"), 40);
+  TypingText.runAll();
+</script>  
 <script src="js/stack.js"></script>
 <script src="js/action-bars.js"></script>
 <script src="js/spinners.js"></script>
-<script src="js/tabs.js"></script> 
 
 </body>
 </html>
