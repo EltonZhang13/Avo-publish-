@@ -19,7 +19,7 @@
 
 <body ontouchstart"">
 
-<div>
+<div class="page">
     <header class="action-bar fixed-top">
       <a href="home.html" class="app-icon action">
         <i class="icon-juan-ortiz-zaforas-plug-c-female"></i>
@@ -36,7 +36,7 @@
       <ul class="actions flex" data-overflow="false">
         <li><a href="home.html" class="action" title="Compose" data-ignore="true"><i class="icon-home"></i></a></li>
         <li><a href="food_history.html" class="action" title="History" data-ignore="true"><i class="icon-storage"></i></a></li>
-        <li><a href="quiz.html" class="action" title="Quiz" data-ignore="true"><i class="icon-checklist blink"></i></a></li>
+        <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist blink"></i></a></li>
         <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-share-2"></i></a></li>
       </ul>
     </nav>
@@ -44,10 +44,16 @@
 	<div class="content inset">
 		
 		<h1 class="header note slide">Thanks for feeding me</h1>
-		<img src="avos/Avo(m).png" class="avo-home">
-		<p class="triangle-border special top">I am ready for the day now&period; Please come back to help me choose what to eat during lunchtime&period; Better yet&comma; take a quiz so you can test your knowledge on health&period; Don&rsquo;t worry it doesn&rsquo;t count towards your grade&period<;/p>
-    <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
-    <p class="meters">Hunger</p><meter value="4" min="0" max="10"></meter>
+		<img src="avos/Avo(t2).png" class="avo-home">
+		<p class="triangle-border special top">I am ready for the day now&period; Please come back to help me choose what to eat during lunchtime&period; Better yet&comma; take a quiz so you can test your knowledge on health&period; Don&rsquo;t worry it doesn&rsquo;t count towards your grade&period;</p>
+  
+  <div class="wrap">
+    <div id="progHe1" class="prog-he decrease"></div>
+    <span class="health">Health Bar</span>
+  </div>
+  <div class="wrap">
+    <div id="progHu1" class="prog-hu increase"></div>
+    <span class="hunger">Hunger Bar</span>
 	</div>
 
 </div>

@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="lib/css/content.css">
   <link rel="stylesheet" href="lib/css/buttons.css">
   <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
   <link rel="stylesheet" href="lib/css/stack.css">
   <link rel="stylesheet" href="lib/css/stylesheet.css">
-
+     
 </head>
 
 <body ontouchstart="">
@@ -36,7 +37,7 @@
     <ul class="actions flex" data-overflow="false">
       <li><a href="home.html" class="action" title="Compose" data-transition="pop"><i class="icon-home"></i></a></li>
       <li><a href="food_history.html" class="action" title="History" data-transition="push"><i class="icon-storage"></i></a></li>
-      <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist blink"></i></a></li>
+      <li><a href="quiz.html" class="action" title="Quiz" data-transition="push"><i class="icon-checklist"></i></a></li>
       <li><a href="share.html" class="action" title="Refresh" data-ignore="true"><i class="icon-refresh"></i></a></li>
     </ul>
   </nav>
@@ -44,10 +45,16 @@
 	<div class="content inset">
 
 	<img src="avos/Avo(m).png" class="avo-home">
-	<p class="triangle-border special top">Hi&period; I&rsquo;m not ready for another meal yet&comma; but you can look at all the foods you&rsquo;ve helped me choose in the food history tab on the navigation bar below&period; Better yet&comma; you can take a quiz to earn some points to put into one of the meters&period;</p>
+	<p class="triangle-border special top">Hi&period; I&rsquo;m not ready for another meal yet&comma; but you can look at all the foods you&rsquo;ve helped me choose in the food history tab on the navigation bar below&period; Don&rsquo;t forget to come back during lunchtime&period;</p>
 
-  <p class="meters">Health</p><meter value="10" min="0" max="10"></meter><br>
-  <p class="meters">Hunger</p><meter value="4" min="0" max="10"></meter>
+  <div class="wrap">
+    <div class="progHe2 prog-he"></div>
+    <span class="health">Health Bar</span>
+  </div>
+  <div class="wrap">
+    <div class="progHu2 prog-hu"></div>
+    <span class="hunger">Hunger Bar</span>
+  </div>
 
 	</div>
 </div>

@@ -35,6 +35,7 @@ C:\dev\www\avo1\avo\platforms\android\assets\www\cordova_plugins.js \
 C:\dev\www\avo1\avo\platforms\android\assets\www\drink.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\example.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\example2.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\fill-bar.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\foods \
 C:\dev\www\avo1\avo\platforms\android\assets\www\food_history.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\help \
@@ -61,16 +62,46 @@ C:\dev\www\avo1\avo\platforms\android\assets\www\results.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\share.html \
 C:\dev\www\avo1\avo\platforms\android\assets\www\spec \
 C:\dev\www\avo1\avo\platforms\android\assets\www\spec.html \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(c).png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(c_i).png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(eb).png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(m).mp4 \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(m).png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(m).psd \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(m2).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(p).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(s).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(t).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(t2).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(td).png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(trans).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo(xs).png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo-Large.png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo.png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\avos\avo_sad.png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\eyebrow.png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0000.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0001.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0002.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0003.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0004.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0005.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0006.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0007.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0008.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0009.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0010.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0011.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0012.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0013.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0014.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0015.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0016.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0017.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0018.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0019.jpg \
+C:\dev\www\avo1\avo\platforms\android\assets\www\avos\Avo Animation Steps\Avo(m)0020.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\foods\104_0729.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\foods\bowl_of_cereal.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\foods\cereal.png \
@@ -101,6 +132,7 @@ C:\dev\www\avo1\avo\platforms\android\assets\www\img\miniwheat.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\img\miniwheat.png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\img\post.png \
 C:\dev\www\avo1\avo\platforms\android\assets\www\img\post_logo.png \
+C:\dev\www\avo1\avo\platforms\android\assets\www\img\sugar.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\img\sugar1.jpg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\js\action-bars.js \
 C:\dev\www\avo1\avo\platforms\android\assets\www\js\Chart.js \
@@ -122,28 +154,12 @@ C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\content.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\forms.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\icomoon.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\lists.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\sliders.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\spinners.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\stack.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\stylesheet.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\tabs.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\typography.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\app.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\beware.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\choice-cereal.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\choice-oatmeal.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\choice-orange.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\choose_brand.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\history.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\home.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\index.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\layout.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\main.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\point.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\quiz.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\ratchet.css \
-C:\dev\www\avo1\avo\platforms\android\assets\www\lib\css\My Css\results.css \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\fonts\icomoon.dev.svg \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\fonts\icomoon.eot \
 C:\dev\www\avo1\avo\platforms\android\assets\www\lib\fonts\icomoon.svg \
