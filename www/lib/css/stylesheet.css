@@ -285,7 +285,7 @@ span {
 .triangle-border.special {
   position: relative;
   padding: 15px;
-  margin: 2em auto 1.5em;
+  margin: 4em auto 1.5em;
   border: 5px solid #5a8f00;
   color: #333;
   background: #e4e4e4;
@@ -319,7 +319,7 @@ span {
 
 /*Avo Home*/
 
-#why {
+.omi {
   text-align: center;
   width: 85%;
   margin: 1em 7.5%;
@@ -750,11 +750,13 @@ ul li p {
 .state1 {
   content: "";
   position: absolute;
-  top: 313px; left: 97px; bottom: 0; right: 0;
+  width: 300px; height: 400px;
+  top: 65px; left: 97px; bottom: 0; right: 0;
   background: url("../../avos/Avo(trans).png") no-repeat;
   background-position: 0px 0;
-  opacity: 0;
-  -webkit-animation: fade 3s cubic-bezier(1,.01,1,1) ;
+  opacity: 1;
+  -webkit-animation: show 3s cubic-bezier(1,.01,1,1) 1.5s;
+  -webkit-animation-fill-mode: forwards;
 }
 .blink {
   -webkit-animation: blinker 1s cubic-bezier(.53,.09,.5,.91) 10s 5;  
@@ -812,8 +814,8 @@ ul li p {
   -webkit-animation-fill-mode: forwards;
 }
 
-.prog-he.fill:hover {
-  -webkit-animation: prob-bar 2s linear;
+.prog-he.fill {
+  -webkit-animation: prob-bar 2s linear 1s;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -855,13 +857,13 @@ ul li p {
   opacity: 1;
 }
 
-
 .show {
-  -webkit-animation: show 4s ease-in-out ;
+  -webkit-animation: show 4s ease-in-out 3s;
 }
 
 .fade {
   -webkit-animation: fade 3s cubic-bezier(1,.01,1,1);
+  -webkit-animation-fill-mode: forwards;
 }
 
 /* Transformations */
@@ -883,6 +885,10 @@ ul li p {
   opacity: 0;
   -webkit-animation: image-reveal 5s ease-in-out 5s;
   -webkit-animation-fill-mode: forwards;
+}
+
+#screwit {
+  opacity: 0;
 }
 
 /*#Avo_c {

@@ -109,6 +109,61 @@ p {
   width: 0;
 }
 
+.triangle-border.bug.top:before {
+  top: -20px;
+  bottom: auto;
+  left: 43%;
+  right: 40px;
+  border-width: 0 20px 20px;
+}
+
+.triangle-border.bug:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #5a8f00 transparent;
+  display: block;
+  width: 0;
+}
+
+.triangle-border.bug {
+  position: relative;
+  padding: 15px;
+  margin: 2em auto 3em;
+  border: 5px solid #5a8f00;
+  color: #333;
+  background: #e4e4e4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: Cambria, sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.triangle-border.bug.top:after {
+  top: -12px;
+  bottom: auto;
+  left: 45%;
+  right: 47px;
+  border-width: 0 13px 13px;
+}
+
+.triangle-border.bug:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #e4e4e4 transparent;
+  display: block;
+  width: 0;
+}
+
 .center-me {
 text-align: center;
 }
