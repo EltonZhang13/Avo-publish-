@@ -754,8 +754,8 @@ ul li p {
   top: 65px; left: 97px; bottom: 0; right: 0;
   background: url("../../avos/Avo(trans).png") no-repeat;
   background-position: 0px 0;
-  opacity: 0;
-  -webkit-animation: show 3s cubic-bezier(1,.01,1,1) 1.5s;
+  opacity: 1;
+  -webkit-animation: show 3s cubic-bezier(1,.01,1,1);
   -webkit-animation-fill-mode: forwards;
 }
 .blink {
